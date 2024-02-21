@@ -1,13 +1,13 @@
 <template>
 
   <div class="addressInfo">
-    <div class="addressInfo__container container">
+    <div class="addressInfo -container container">
 
-      <div class="addressInfo__content">
+      <div class="addressInfo -content">
 
         <form id="form" @submit.prevent="onSubmit">
-          <div class="addressInfo__block block">
-            <div class="addressInfo__block_text">
+          <div class="addressInfo -block block">
+            <div class="addressInfo -block_text">
               Адрес клиента
             </div>
             <EntryField v-for="addressInfo of addressInfo"
@@ -17,7 +17,7 @@
                         v-bind:class="addressInfo.class"
                         v-bind:options="addressInfo.options"
                         v-bind:required="addressInfo.required"
-                        v-bind:title="addressInfo.label"/>
+                        v-bind:title="addressInfo.title"/>
           </div>
         </form>
       </div>
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import EntryField from "@/components/EntryField/EntryField";
+import EntryField from "@/components/failed_implementation/EntryField/EntryField";
 
 export default {
   props: ['addressInfo'],
@@ -38,6 +38,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="sass" src="../../style/styleBlockInfo.sass">
 
 </style>

@@ -1,0 +1,31 @@
+.passportInfo, .personalInfo, .addressInfo
+  margin-left: 10px
+  display: flex
+  flex-direction: column
+
+
+.block
+  border: 4px solid #C1CACA
+  box-shadow: 3px 5px 5px #C1CACA
+  border-radius: 16px
+  padding: 15px 0
+  background-color: #F4F5F6
+  max-width: 30vw
+  flex: 0 1 33.3333%
+
+.-block_text
+  padding-bottom: 10px
+  font-size: 18px
+  align-items: center
+
+@media screen
+.passportInfo, .personalInfo, .addressInfo
+  @media (max-width: 1024px)
+    display: flex
+    flex-direction: column
+    min-width: 60vw
+    flex: 0 1 100%
+
+
+
+

@@ -1,0 +1,81 @@
+.blocks
+  .-content
+    display: flex
+    flex-direction: column
+    max-width: 1300px
+    margin: auto
+    font-family: "Comic Sans MS"
+
+  .-block
+    margin: 20px 10px 0 10px
+    display: flex
+
+  .-title
+    font-weight: 500
+    font-size: 20px
+    margin: auto
+
+  .-btn
+    margin-top: 20px
+    display: flex
+    justify-content: center
+
+    button
+      border-radius: 18px
+      border: 1px solid #99D6EA
+      background-color: #99D6EA
+      font-size: 20px
+      color: #fff
+      padding: 7px 30px
+      box-shadow: 3px 3px 3px #C1CACA
+
+
+.creatingClient
+  display: none
+  .-block
+    font-weight: 600
+    font-size: 20px
+    position: fixed
+    width: 250px
+    height: 120px
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    margin: auto
+    border: 1px solid #C1CACA
+    border-radius: 16px
+    background-color: #C1CACA
+    box-shadow: 3px 3px 5px #99D6EA
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 0 10px
+
+.btn
+  border-radius: 18px
+  border: 1px solid #99D6EA
+  background-color: #99D6EA
+  font-size: 18px
+  color: #fff
+  padding: 5px 30px
+
+  margin-top: -20px
+
+
+
+@media screen
+
+.blocks
+  .-content
+    @media (max-width: 1024px)
+      display: flex
+      flex-direction: column
+
+  .-block
+    @media (max-width: 1024px)
+      display: flex
+      flex-direction: column
+      margin: 20px auto 0 auto
+

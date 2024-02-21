@@ -1,13 +1,13 @@
 <template>
 
   <div class="passportInfo">
-    <div class="passportInfo__container container">
+    <div class="passportInfo -container container">
 
-      <div class="passportInfo__content">
+      <div class="passportInfo -content">
 
         <form id="form" @submit.prevent="onSubmit">
-          <div class="passportInfo__block block">
-            <div class="passportInfo__block_text">
+          <div class="passportInfo -block block">
+            <div class="passportInfo -block_text">
               Паспортные данные
             </div>
             <EntryField v-for="passportInfo of passportInfo"
@@ -17,7 +17,7 @@
                         v-bind:class="passportInfo.class"
                         v-bind:options="passportInfo.options"
                         v-bind:required="passportInfo.required"
-                        v-bind:title="passportInfo.label"/>
+                        v-bind:title="passportInfo.title"/>
           </div>
         </form>
       </div>
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import EntryField from "@/components/EntryField/EntryField";
+import EntryField from "@/components/failed_implementation/EntryField/EntryField";
 
 export default {
   props: ['passportInfo'],
@@ -38,6 +38,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="sass" src="../../style/styleBlockInfo.sass">
 
 </style>
