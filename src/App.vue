@@ -1,5 +1,7 @@
 <template>
-  <NewClient/>
+  <div class="app">
+    <NewClient/>
+  </div>
 </template>
 
 <script>
